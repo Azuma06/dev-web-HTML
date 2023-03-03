@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<body style="background-color: pink; font-size: 35px; text-align: center;">
+   <p style="color:black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel consequat risus, quis luctus erat. Vestibulum auctor, sapien a gravida gravida, lectus eros congue sapien, et egestas nisi nunc a lectus. Sed orci turpis, faucibus in urna eu, blandit ultricies nisi. Praesent sed maximus turpis. Donec sed lorem leo. Duis malesuada bibendum nisi eu venenatis. Donec ultricies interdum est, nec fringilla arcu facilisis non. Aliquam eget eros a lectus gravida gravida. Mauris nec blandit justo, sed sollicitudin velit. Sed vel congue est
+
+   </p>
+</body>
+</html>
