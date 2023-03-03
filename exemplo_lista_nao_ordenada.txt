@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body style="background-color: black">
-    <p> style="color: yellow"Lista de atividades quarta-feira</p>
+    <p style="color: yellow">Lista de atividades quarta-feira</p>
     <ul style="color: yellow">
         <li>acorda</li>
         <li>se veste</li>
