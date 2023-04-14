@@ -1,0 +1,100 @@
+p{
+    padding: 10px;
+}
+    .container{
+        width: 1200px;
+        height: auto;
+        background-color: purple;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+.header{
+    width: 100%;
+    height: auto;
+    background-color: #ccc;
+    float: left;
+
+}
+
+.navbar{
+    width: 100%;
+    height: auto;
+    background-color: crimson;
+    float: left;
+}
+
+.content{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(37, 21, 37);
+    float: left;
+}
+
+/*.linha-e1{
+    width: 100%;
+    height: 500px;
+    background-color: burlywood;
+    float: left;
+}
+
+.texto-e{
+    width: 40%;
+    height: 500px;
+    background-color: blueviolet;
+    float: left;
+}
+
+.imagem-e{
+    width: 60%;
+    height: 500px;
+    background-color: fuchsia;
+    float: left;
+}
+
+.linha-1{
+    width: 100%;
+    height: 400px;
+    background-color: aqua;
+    float: left;
+}
+
+.linha-2{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(56, 56, 83);
+    float: left;
+}
+
+
+.coluna-1{
+    width: 50%;
+    height: 400px;
+    background-color: azure;
+    float:left;
+}
+
+.coluna-2{
+    width: 50%;
+    height: 400px;
+    background-color: grey;
+}
+
+.coluna-3{
+    width: 50%;
+    height: 400px;
+    background-color: greenyellow;
+}
+
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: crimson;
+    float: left;
+}
+
+@media screen and (max-width: 600px) {
+    .container, .header, .navbar, .content, .footer {
+      width: 100%; 
+    }
+  }
