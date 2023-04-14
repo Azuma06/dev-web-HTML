@@ -1,0 +1,114 @@
+p{
+    padding: 10px;
+  }
+  
+  .container{
+    width: 1200px;
+    height: auto;
+    background-color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .header{
+    width: 100%;
+    height: auto;
+    background-color: rgb(185, 185, 185);
+    float: left;
+  }
+  
+  .navbar{
+    width: 100%;
+    height: auto;
+    background-color: rgb(185, 185, 185);
+    float: left;
+  }
+  
+  .content{
+    width: 100%;
+    height: auto;
+    background-color: rgb(185, 185, 185);
+    float: left;
+  }
+  
+  .linha1{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(185, 185, 185);
+    float: left;
+  }
+  
+  .linha2{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(145, 145, 145);
+    float: left; 
+  }
+  
+  .linha3{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(145, 145, 145);
+    float: left; 
+  }
+  
+  .coluna1{
+    width: 50%;
+    height: 500px;
+    background-color: rgb(185, 185, 185);
+    float: left;
+  }
+  
+  .coluna2{
+    width: 50%;
+    height: 500px;
+    background-color: rgb(185, 185, 185);
+    float: left;
+  }
+  
+  .coluna3{
+    width: 50%;
+    height: 500px;
+    background-color: rgb(185, 185, 185);
+    float: left;
+  }
+  
+  .coluna4{
+    width: 50%;
+    height: 500px;
+    background-color: rgb(185, 185, 185);
+    float: left;
+  }
+  
+  .coluna5{
+    width: 50%;
+    height: 500px;
+    background-color: rgb(185, 185, 185);
+    float: left;
+  }
+  
+  .coluna6{
+    width: 50%;
+    height: 500px;
+    background-color: rgb(185, 185, 185);
+    float: left;
+  }
+  
+  .footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(185, 185, 185);
+    float: left;
+  }
+  
+  .imagem{
+    left: 50%;
+    top: 50%;
+    transform: translate(50%, 50%);
+  }
+  @media screen and (max-width: 600px) {
+    .container, .header, .navbar, .content, .footer {
+     width: 100%; 
+    }
+   }
+  
