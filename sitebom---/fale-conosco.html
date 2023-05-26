@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/topnav.js"></script>
+    <link rel="stylesheet" href="css/form.css">
+    <title>Revisão HTML e CSS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <center><a href="index.html"><img src="img/azuma.png" style="width: 17%; height: 17%; padding: 5px;"></a></center>
+        </div>
+        <div class="navbar">
+            <div class="topnav" id="myTopnav">
+                <a href="index.html">Home</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="equipe.html">Equipe</a>
+                <a href="fale-conosco.html"class="active">Fale Conosco</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        </div>
+        <div class="content">
+            <div class="linha-form">
+                <div class="form" style="padding: 10px">
+                    <form action="/action_page.php">
+                        <label for="fname">Primeiro nome</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    
+                        <label for="lname">Ultimo nome</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    
+                        <label for="country">Pais</label>
+                        <select id="country" name="country">
+                          <option value="australia">Australia</option>
+                          <option value="canada">Canada</option>
+                          <option value="usa">USA</option>
+                          <option value="usa">Brasil</option>
+                        </select>
+                    
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="Assunto" placeholder="Escreva algo.." style="height:200px"></textarea>
+                    
+                        <input type="submit" value="Submit">
+                      </form>
+                </div>
+            </div>
+            <div class="linha-56">
+                <div class="col-57">
+                    <p style="text-align: justify; font-size: 20px; padding-right: 10px; padding-left: 10px; margin: 0px; padding-bottom: 40px;"><br><br>&emsp; Entre em contato por nossas mídias sociais:</p>
+                </div>
+            </div>
+            <div class="linha-91">
+                <div class="col-91">
+                    <button><img src="img/wh.png" style="width: 20%; height: 20%; padding: 2px;"></button>
+                </div>
+                <div class="col-92">
+                    <button><img src="img/Instagram.png" style="width: 20%; height: 20%; padding: 2px;"></button>
+                </div>
+                <div class="col-93">
+                    <button><img src="img/twitter.png" style="width: 20%; height: 20%;"></button>
+                </div>
+                <div class="col-94">
+                    <button><img src="img/wh.png" style="width: 20%; height: 20%;"></button>
+                </div>
+            </div>
+            <div class="linha-56">
+                <div class="col-57">
+                    <p style="text-align: justify; font-size: 20px; padding-right: 10px; padding-left: 10px; margin: 0px; padding-bottom: 40px;"><br><br>&emsp; Ou venha até nossa sede nos visitar:</p>
+                <div class="google-maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d842.5268182319538!2d-51.16175108735874!3d-29.607791067481415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519453f0ed7c1f1%3A0xc85cbcfcd6417b48!2sInstituto%20Ivoti!5e0!3m2!1spt-BR!2sbr!4v1685122935274!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <center><p>2023 - Todos os direitos reservados</p></center>
+        </div>
+    </div>
+</body>
+</html>
