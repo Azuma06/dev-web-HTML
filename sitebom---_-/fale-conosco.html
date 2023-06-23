@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/topnav.js"></script>
+    <link rel="stylesheet" href="css/form.css">
+    <title>Revisão HTML e CSS</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .body {
+        width: 100vw;
+        min-height: 100vw;
+    }
+
+    .trail {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid #ccc;
+        background: #ccc;
+        position: fixed;
+        animation: come 1s linear forwards;
+    }
+
+    /* Exclude buttons from animation interference */
+    .trail button {
+        pointer-events: none;
+    }
+
+    @keyframes come {
+        0% {
+            transform: scale(0);
+        }
+        10% {
+            transform: scale(1) translateY(0px);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(0) translateY(50px);
+            opacity: 0;
+        }
+    }
+</style>
+
+<body class="flex">
+    <script>
+        var body = document.body;
+    
+        document.addEventListener('mousemove', (e) => {
+            if (e.target.classList.contains('icon') || e.target.tagName === 'BUTTON') {
+                return;
+            }
+            var elem = document.createElement('div');
+            elem.setAttribute('class', 'trail');
+    
+            const offsetX = 0; // Adjust the X offset as desired
+            const offsetY = 0.5; // Adjust the Y offset as desired
+            elem.setAttribute('style', `left: ${e.clientX + offsetX}px; top: ${e.clientY + offsetY}px;`);
+    
+            elem.onanimationend = () => {
+                elem.remove();
+            };
+    
+            body.insertAdjacentElement('beforeend', elem);
+        });
+    
+        document.addEventListener('click', (e) => {
+            var elem = document.createElement('div');
+            elem.setAttribute('class', 'trail-click');
+    
+            const offsetX = 0; // Adjust the X offset as desired
+            const offsetY = 0.5; // Adjust the Y offset as desired
+            elem.setAttribute('style', `left: ${e.clientX + offsetX}px; top: ${e.clientY + offsetY}px;`);
+    
+            elem.onanimationend = () => {
+                elem.remove();
+            };
+    
+            body.insertAdjacentElement('beforeend', elem);
+        });
+    
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            x.className === "topnav" ? x.className += " responsive" : x.className = "topnav";
+        }
+    </script>
+    
+    
+<body>
+    <div class="container-1">
+        <div class="navbar">
+            <div class="topnav" id="myTopnav">
+                <a href="index.html">Home</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="equipe.html">Equipe</a>
+                <a href="fale-conosco.html"class="active">Fale Conosco</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        </div>
+        <div class="header">
+            <center><a href="index.html"><img src="img/azuma.png" style="width: 11%; height: 11%; padding: 5px;"></a></center>
+        </div>
+        
+        <div class="content">
+            <div class="linha-form">
+                <div class="form" style="padding: 10px; background-color: rgba(156,0,0,1);">
+                    <form action="/action_page.php">
+                        <label for="fname" style=" color: rgb(216, 216, 216);">Primeiro nome</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    
+                        <label for="lname"  style=" color: rgb(216, 216, 216);">Ultimo nome</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    
+                        <label for="country" style=" color: rgb(216, 216, 216);">Pais</label>
+                        <select id="country" name="country">
+                          <option value="australia" style=" color: rgb(216, 216, 216);">Australia</option>
+                          <option value="canada">Canada</option>
+                          <option value="usa">USA</option>
+                          <option value="usa">Brasil</option>
+                        </select>
+                    
+                        <label for="subject" style=" color: rgb(216, 216, 216);">Subject</label>
+                        <textarea id="subject" name="Assunto" placeholder="Escreva algo.." style="height:200px"></textarea>
+                    
+                        <input type="submit" value="Submit">
+                      </form>
+                </div>
+            </div>
+            </div>
+            <div class="linha-56">
+                <div class="col-57">
+                    <p style="text-align: justify; font-size: 20px; padding-right: 10px; padding-left: 10px; margin: 0px; padding-bottom: 40px;  color: rgb(216, 216, 216);"><br><br>&emsp; Entre em contato por nossas mídias sociais:</p>
+                </div>
+            </div>
+            <div class="linha-91">
+                <div class="col-91">
+                    <a href="https://api.whatsapp.com/send?phone=5551996962186">
+                        <button class="button" style="margin-left: 20px; margin-right: 20px"><img src="img/wh.png" alt="WhatsApp"></button>                </a>
+                </div>
+                <div class="col-92">
+                    <a href="https://www.instagram.com/azum4_/">
+                    <button class="button" style="margin-left: 20px; margin-right: 20px;"><img src="img/Instagram.png" alt="Instagram"></button>
+                </a>
+                </div>
+                <div class="col-93">
+                    <a href="https://twitter.com/">
+                    <button class="button" style="margin-left: 20px; margin-right: 20px;"><img src="img/twitter.png" alt="Twitter"></button>
+                </a>
+                </div>
+                <div class="col-94">
+                    <button class="button" style="margin-left: 20px; margin-right: 20px;"><img src="img/wh.png" alt="WhatsApp"></button>
+                </div>
+            </div>
+            <div class="linha-56">
+                <div class="col-57">
+                    <p style="text-align: justify; font-size: 20px; padding-right: 10px; padding-left: 10px; margin: 0px; padding-bottom: 40px; color: rgb(216, 216, 216);"><br><br>&emsp; Ou venha até nossa sede nos visitar:</p>
+                <div class="google-maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d842.5268182319538!2d-51.16175108735874!3d-29.607791067481415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519453f0ed7c1f1%3A0xc85cbcfcd6417b48!2sInstituto%20Ivoti!5e0!3m2!1spt-BR!2sbr!4v1685122935274!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <center><p>Azuma MKT 2023 - Todos os Direitos Reservados</p></center>
+        </div>
+    </div>
+</body>
+</html>
