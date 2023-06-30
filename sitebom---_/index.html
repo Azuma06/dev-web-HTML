@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/topnav.js"></script>
+    <title>Revisão HTML e CSS</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .body {
+        width: 100vw;
+        min-height: 100vw;
+    }
+
+    .trail {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid #3312eb;
+        background: #eb12ce;
+        position: fixed;
+        animation: come 1s linear forwards;
+    }
+
+    /* Exclude buttons from animation interference */
+    .trail button {
+        pointer-events: none;
+    }
+
+    @keyframes come {
+        0% {
+            transform: scale(0);
+        }
+        10% {
+            transform: scale(1) translateY(0px);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(0) translateY(50px);
+            opacity: 0;
+        }
+    }
+</style>
+
+<body class="flex">
+    <script>
+        var body = document.body;
+    
+        document.addEventListener('mousemove', (e) => {
+            if (e.target.classList.contains('icon') || e.target.tagName === 'BUTTON') {
+                return;
+            }
+            var elem = document.createElement('div');
+            elem.setAttribute('class', 'trail');
+    
+            const offsetX = 0; // Adjust the X offset as desired
+            const offsetY = 0.5; // Adjust the Y offset as desired
+            elem.setAttribute('style', `left: ${e.clientX + offsetX}px; top: ${e.clientY + offsetY}px;`);
+    
+            elem.onanimationend = () => {
+                elem.remove();
+            };
+    
+            body.insertAdjacentElement('beforeend', elem);
+        });
+    
+        document.addEventListener('click', (e) => {
+            var elem = document.createElement('div');
+            elem.setAttribute('class', 'trail-click');
+    
+            const offsetX = 0; // Adjust the X offset as desired
+            const offsetY = 0.5; // Adjust the Y offset as desired
+            elem.setAttribute('style', `left: ${e.clientX + offsetX}px; top: ${e.clientY + offsetY}px;`);
+    
+            elem.onanimationend = () => {
+                elem.remove();
+            };
+    
+            body.insertAdjacentElement('beforeend', elem);
+        });
+    
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            x.className === "topnav" ? x.className += " responsive" : x.className = "topnav";
+        }
+    </script>
+    
+    
+    
+    <div class="container-1">
+        <div class="navbar">
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" class="active">Home</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="equipe.html">Equipe</a>
+                <a href="fale-conosco.html">Fale Conosco</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div class="header">
+            <center><a href="index.html"><img src="img/azuma.png" style="width: 11%; height: 11%; padding: 5px;"></a></center>
+        </div>
+        
+        <div class="content-1">
+            <div class="linha-56">
+                <div class="col-57">
+                    <p style="text-align: justify; font-size: 20px; padding-right: 10px; padding-left: 10px; margin: 0px; color: rgb(216, 216, 216);"><br><br>&emsp; Bem-vindo(a) à nossa empresa de marketing Azuma! Somos uma agência especializada em estratégias de marketing digital que busca impulsionar o crescimento dos negócios dos nossos clientes por meio de soluções inovadoras. Nossa equipe de profissionais apaixonados e experientes trabalha arduamente para desenvolver estratégias personalizadas e eficazes que atendam às necessidades únicas de cada empresa.</p>
+                    <p style="text-align: justify; font-size: 20px; padding-right: 10px; padding-left: 10px; color: rgb(216, 216, 216);">&emsp; Nossa prioridade é fornecer soluções personalizadas, alavancando as últimas tendências e melhores práticas do setor de marketing digital. Se você está procurando uma parceria confiável para ajudá-lo(a) a alcançar o sucesso online, entre em contato conosco e vamos começar a trabalhar juntos!</p>
+                    <br>
+                    <p style="text-align: justify; font-size: 20px; padding-right: 10px; padding-left: 10px; color: rgb(216, 216, 216);">&emsp; Na nossa empresa de marketing, tivemos o privilégio de trabalhar com uma variedade de clientes e projetos recentes, ajudando-os a alcançar resultados significativos no mundo digital. Aqui estão alguns dos nossos clientes e projetos notáveis:</p>
+                    <div class="col-58">
+                    <p style="text-align: justify; font-size: 20px; padding-right: 10px; padding-left: 10px; color: rgb(216, 216, 216);">&emsp; EA - Desenvolvimento de Marca e Website: Trabalhamos com a Empresa A, uma start-up inovadora do setor de tecnologia, para desenvolver sua marca e criar um website moderno e intuitivo. Ajudamos a estabelecer sua identidade de marca, criando um logotipo distintivo, cores de marca consistentes e uma mensagem de marca clara. Além disso, criamos um site responsivo que reflete a proposta de valor da Empresa A e facilita a navegação para os usuários.</p>
+                    </div>
+                    <div class="col-59">
+                        <center>
+                        <img src="img/1.png" style="width: 40%; height: 33%;">
+                        </center>
+                    </div>
+                    <div class="col-60">
+                        <p style="text-align: justify; font-size: 20px; padding-right: 10px; padding-left: 10px; color: rgb(216, 216, 216);">&emsp; Zara - Estratégia de Marketing Digital e SEO: Colaboramos com a Zara, uma loja de moda online, para aprimorar sua presença digital e aumentar a visibilidade nos motores de busca. Realizamos uma pesquisa detalhada de palavras-chave e otimizamos o conteúdo do site para melhorar o ranking nos resultados de busca orgânica. Além disso, desenvolvemos uma estratégia de marketing de conteúdo e gerenciamento de redes sociais para fortalecer a marca e aumentar o engajamento dos clientes.</p>
+                    </div>
+                    <div class="col-61">
+                        <center>
+                        <img src="img/2.jpg" style="width: 40%; height: auto;">
+                        </center>
+                    </div>
+                    <p></p>
+                    <div class="col-57">
+                        <a href="https://api.whatsapp.com/send?phone=5551996962186">
+                            <center>
+                              <button style="width: 30%; height: 15%; margin: 7px; border-radius: 20px;">
+                                <img src="img/wh.png" style="width: 20%; height: 20%; padding: 5px;">
+                                
+                              </button>
+                            </center>
+                          </a>
+                    </div>                          
+                </div> 
+            </div>
+        </div>
+        <div class="footer">
+            <center><p>Azuma MKT 2023 - Todos os Direitos Reservados</p></center>
+        </div>
+    </div>
+</body>
+</html>
